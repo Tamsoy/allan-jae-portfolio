@@ -50,6 +50,7 @@ export function Portfolio() {
           <a href="#top" className="font-mono text-sm font-semibold tracking-tight" aria-label="Allan Jae Eparwa, home">AJ AE</a>
           <nav className="hidden items-center gap-8 text-sm md:flex" aria-label="Primary navigation">
             <a className="nav-link" href="#experience">Experience</a>
+            <a className="nav-link" href="#side-quests">Side Quests</a>
             <a className="nav-link" href="#skills">Skills</a>
             <a className="nav-link" href="#about">About</a>
             <a className="nav-link" href="#contact">Contact</a>
@@ -134,6 +135,32 @@ export function Portfolio() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id="side-quests" className="border-t">
+        <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
+          <div className="mb-12 flex items-end justify-between md:mb-16">
+            <div>
+              <p className="mb-4 font-mono text-xs uppercase tracking-widest text-muted-foreground">Experiments & tools</p>
+              <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">Side Quests</h2>
+            </div>
+            <span className="font-mono text-xs text-muted-foreground">01 project</span>
+          </div>
+          <a href="/side-quests/keytone" className="group grid gap-8 border-t py-8 md:grid-cols-12 md:items-center md:gap-10 md:py-10">
+            <div className="overflow-hidden bg-muted md:col-span-7">
+              <Image src="/images/atlas-project.png" alt="KeyTone keyboard sound library project preview" width={1600} height={1000} className="aspect-video w-full object-cover grayscale transition duration-500 group-hover:scale-[1.02] group-hover:grayscale-0" />
+            </div>
+            <div className="flex flex-col gap-5 md:col-span-5">
+              <div className="flex items-center justify-between gap-4">
+                <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">01 / 01</p>
+                <ArrowUpRight aria-hidden="true" className="size-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </div>
+              <h3 className="text-3xl font-semibold tracking-tight">KeyTone</h3>
+              <p className="leading-relaxed text-muted-foreground">A small sound library for keyboard enthusiasts: compare switches, hear the difference, and find your next favorite typing sound.</p>
+              <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Web audio · UI design · Sound</p>
+            </div>
+          </a>
         </div>
       </section>
 
