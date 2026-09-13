@@ -1,0 +1,40 @@
+﻿KeyTone 1.2 — Third-party audio attribution
+
+Blue Switch, Red Switch and Brown Switch use the CherryMX Blue - ABS keycaps and
+CherryMX Red - ABS keycaps and CherryMX Brown - ABS keycaps recordings bundled by MechvibesDX.
+Author in pack metadata: Mechvibes.
+Source: https://github.com/hainguyents13/mechvibes-dx
+Pinned revision: a13c4181feff1217399765f5b6be6f2c7392eeb3
+Paths: soundpacks/keyboard/cherrymx-blue-abs cherrymx-red-abs and cherrymx-brown-abs.
+Repository license: MIT, reproduced below.
+
+KeyTone modifications: physical scan-code mapping, extraction of separate
+press/release events using the upstream timing definitions, silence trimming,
+DC removal, short edge fades, mono conversion, 48 kHz resampling and pack-wide
+level adjustment. Unrecorded modifier keys use corresponding recorded keys;
+other unsupported physical keys fall back to the recorded A key.
+Variation makes small pitch/volume changes to a key's recording.
+No affiliation with or endorsement by CHERRY or Mechvibes is implied.
+Actual sound varies with keycaps, keyboard case, microphone and speakers.
+
+MIT License
+
+Copyright (c) 2026 Hải Nguyễn
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

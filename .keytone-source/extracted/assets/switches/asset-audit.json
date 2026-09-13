@@ -1,0 +1,26 @@
+{
+  "blue": {
+    "keys": 105,
+    "rate": 48000,
+    "gain": 0.8150784661170506,
+    "sha256": "1e9508e4a1fec6f27fcfbb7552b845b651881b3048c1c76283805868777147d4",
+    "source_sha256": "8cf6f7dc90f869b5544c4ec8d1fdb8d975c057d9383020920b03cf46323b1ca1",
+    "min_event_peak": 0.02861591921828118
+  },
+  "red": {
+    "keys": 105,
+    "rate": 48000,
+    "gain": 0.9291859432245677,
+    "sha256": "8c8216b167ceb1ebc256c9c45d2b7908c26f58547a390db2eb0b86ecce32e220",
+    "source_sha256": "330f91fc14f5a5232594f17058f02603ea67226fafd362fcf94e90463dbdcb40",
+    "min_event_peak": 0.010760886875115654
+  },
+  "brown": {
+    "keys": 105,
+    "rate": 48000,
+    "gain": 0.815045393550549,
+    "sha256": "634470a42c50ea1de27eebc3cb2dbb23d488c160d8a759477170bd0785efd657",
+    "source_sha256": "1a77001c5741aff8102c967ba7b8f42d40771506f185174ff40d0de78a265385",
+    "min_event_peak": 0.03692245310263217
+  }
+}

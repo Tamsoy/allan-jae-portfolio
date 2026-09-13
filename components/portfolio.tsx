@@ -149,7 +149,7 @@ export function Portfolio() {
           </div>
           <a href="/side-quests/keytone" className="group grid gap-8 border-t py-8 md:grid-cols-12 md:items-center md:gap-10 md:py-10">
             <div className="overflow-hidden bg-muted md:col-span-7">
-              <Image src="/images/atlas-project.png" alt="KeyTone keyboard sound library project preview" width={1600} height={1000} className="aspect-video w-full object-cover grayscale transition duration-500 group-hover:scale-[1.02] group-hover:grayscale-0" />
+              <Image src="/keytone/keytone-overview.jpg" alt="KeyTone desktop app showing keyboard sound profiles" width={1536} height={816} className="aspect-video w-full object-cover grayscale transition duration-500 group-hover:scale-[1.02] group-hover:grayscale-0" />
             </div>
             <div className="flex flex-col gap-5 md:col-span-5">
               <div className="flex items-center justify-between gap-4">
