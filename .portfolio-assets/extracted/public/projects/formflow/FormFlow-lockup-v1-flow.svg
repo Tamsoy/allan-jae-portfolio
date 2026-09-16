@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 480" role="img" aria-labelledby="title desc">
+  <title id="title">FormFlow logo lockup</title>
+  <desc id="desc">FormFlow wordmark next to a document workflow icon.</desc>
+  <defs>
+    <linearGradient id="tile" x1="40" y1="30" x2="440" y2="450" gradientUnits="userSpaceOnUse"><stop stop-color="#27356f"/><stop offset="1" stop-color="#111a3c"/></linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7af5ff"/><stop offset="1" stop-color="#38c9f4"/></linearGradient>
+  </defs>
+  <rect x="24" y="24" width="432" height="432" rx="108" fill="url(#tile)" stroke="#6d7fd6" stroke-width="6"/>
+  <path d="M84 235c0-55 30-88 76-88h24M278 147h26c42 0 68 31 68 76v31" fill="none" stroke="#77eaf7" stroke-width="9" stroke-linecap="round"/>
+  <path d="M84 333c2 47 34 70 83 70h25M280 403h24c42 0 68-28 68-70v-31" fill="none" stroke="#aa98ff" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="78" cy="235" r="24" fill="#1b2b61" stroke="#71e8f6" stroke-width="7"/><circle cx="78" cy="333" r="24" fill="#1b2b61" stroke="#ad9bff" stroke-width="7"/>
+  <path d="M63 235l9 9 18-21M63 333l9 9 18-21" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M156 83h112l52 52v228c0 15-12 27-27 27H156c-15 0-27-12-27-27V110c0-15 12-27 27-27Z" fill="#f4f8ff" stroke="#fff" stroke-width="5"/>
+  <path d="M268 83v43c0 6 5 9 11 9h41" fill="#c9d8ff" stroke="#fff" stroke-width="5"/>
+  <rect x="172" y="169" width="115" height="12" rx="6" fill="#4f67b7"/><rect x="172" y="205" width="135" height="24" rx="8" fill="#fff" stroke="#93a9e6" stroke-width="3"/><rect x="172" y="247" width="135" height="24" rx="8" fill="#fff" stroke="#93a9e6" stroke-width="3"/><rect x="172" y="289" width="84" height="24" rx="8" fill="#fff" stroke="#93a9e6" stroke-width="3"/>
+  <circle cx="300" cy="300" r="25" fill="url(#cyan)"/><path d="M288 300l9 9 18-21" fill="none" stroke="#0d2352" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="520" y="252" fill="#17234a" font-family="Segoe UI, Arial, sans-serif" font-size="124" font-weight="700" letter-spacing="-4">FormFlow</text>
+  <text x="528" y="330" fill="#5a6b99" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="600" letter-spacing="7">FORMS • ROUTES • RESULTS</text>
+</svg>

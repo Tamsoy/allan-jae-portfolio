@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">DeskCheck workstation diagnostics logo</title>
+  <desc id="desc">A desktop monitor and keyboard on a desk with a diagnostic check badge, status lights and a scan pulse.</desc>
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#294568"/><stop offset="1" stop-color="#0D1729"/></linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#183957"/><stop offset="1" stop-color="#10263D"/></linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C2FFE1"/><stop offset="1" stop-color="#5DE2B4"/></linearGradient>
+    <linearGradient id="desk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A7C6DE"/><stop offset="1" stop-color="#6F98B8"/></linearGradient>
+  </defs>
+  <rect x="12" y="12" width="488" height="488" rx="126" fill="url(#tile)"/>
+  <path d="M126 35h260c52 0 91 39 91 91v30c-120-45-254-64-372-49v-11c0-52 39-91 91-91Z" fill="#fff" opacity=".065"/>
+  <rect x="28" y="28" width="456" height="456" rx="112" fill="none" stroke="#B7D0E4" stroke-opacity=".43" stroke-width="3"/>
+  <!-- desktop monitor -->
+  <rect x="72" y="74" width="368" height="222" rx="26" fill="#081323" stroke="#91B0C9" stroke-opacity=".78" stroke-width="8"/>
+  <rect x="91" y="93" width="330" height="184" rx="14" fill="url(#screen)" stroke="#63E6BE" stroke-opacity=".22" stroke-width="3"/>
+  <path d="M206 335h100M232 296v39M280 296v39M185 354h142" stroke="#B7D0E4" stroke-opacity=".8" stroke-width="10" stroke-linecap="round"/>
+  <!-- system scan panel -->
+  <rect x="117" y="119" width="154" height="106" rx="15" fill="#0D2035" stroke="#78A4C2" stroke-opacity=".38" stroke-width="2"/>
+  <path d="M136 184h24l12-15 20 17 22-28 20 16 21-25 23 18" fill="none" stroke="#63E6BE" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="143" cy="143" r="9" fill="#63E6BE"/><path d="M139 143l3 3 7-8" fill="none" stroke="#092017" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="292" y="119" width="103" height="20" rx="10" fill="#23425F"/><rect x="292" y="152" width="78" height="13" rx="6" fill="#547B9C" opacity=".72"/><rect x="292" y="177" width="91" height="13" rx="6" fill="#547B9C" opacity=".5"/><rect x="292" y="202" width="64" height="13" rx="6" fill="#547B9C" opacity=".5"/>
+  <!-- desk and keyboard -->
+  <path d="M58 365h396" stroke="url(#desk)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M83 380l-20 70M429 380l20 70" stroke="#88A8C1" stroke-width="12" stroke-linecap="round"/>
+  <path d="M127 333h238c12 0 22 9 22 21v5H105v-5c0-12 10-21 22-21Z" fill="#172C42" stroke="#9FC0D7" stroke-opacity=".58" stroke-width="4"/>
+  <path d="M125 353h242" stroke="#6D91AD" stroke-width="3"/>
+  <g fill="#E8F2F7"><rect x="136" y="339" width="22" height="9" rx="3"/><rect x="164" y="339" width="22" height="9" rx="3"/><rect x="192" y="339" width="22" height="9" rx="3"/><rect x="220" y="339" width="22" height="9" rx="3"/><rect x="248" y="339" width="22" height="9" rx="3"/><rect x="276" y="339" width="22" height="9" rx="3"/><rect x="304" y="339" width="22" height="9" rx="3"/><rect x="332" y="339" width="22" height="9" rx="3"/></g>
+  <!-- diagnostic badge -->
+  <circle cx="374" cy="256" r="48" fill="#0A1B2B" stroke="#0B1220" stroke-width="8"/>
+  <circle cx="374" cy="256" r="39" fill="url(#mint)" stroke="#E5FFF2" stroke-width="3"/>
+  <path d="M351 256l15 15 31-34" fill="none" stroke="#0B2A25" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="410" cy="110" r="8" fill="#FFCA6B"/><circle cx="410" cy="110" r="16" fill="none" stroke="#FFCA6B" stroke-opacity=".3" stroke-width="3"/>
+  <!-- small scan cursor -->
+  <path d="M394 68v17M385.5 76.5h17" stroke="#B5F7D8" stroke-width="5" stroke-linecap="round"/>
+</svg>

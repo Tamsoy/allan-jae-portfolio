@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">ClientHub client workspace logo</title>
+  <desc id="desc">A glassmorphism tile with a client profile at the center of a connected hub, surrounded by request, deadline, and notes cards.</desc>
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#394B86"/><stop offset="1" stop-color="#111A38"/></linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C8FBFF"/><stop offset="1" stop-color="#57D8E8"/></linearGradient>
+    <linearGradient id="coral" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FDA4AF"/><stop offset="1" stop-color="#FB7185"/></linearGradient>
+  </defs>
+  <rect x="12" y="12" width="488" height="488" rx="126" fill="url(#tile)"/>
+  <path d="M125 34h251c59 0 98 40 98 98v28c-117-44-252-61-366-41v-20c0-36 5-50 17-65Z" fill="#fff" opacity=".075"/>
+  <rect x="28" y="28" width="456" height="456" rx="112" fill="none" stroke="#C4D0FF" stroke-opacity=".43" stroke-width="3"/>
+  <!-- connected client hub -->
+  <path d="M154 173 L102 126 M358 173 L410 126 M154 340 L101 391 M358 340 L411 391" stroke="#8EA7E6" stroke-width="7" stroke-linecap="round" opacity=".8"/>
+  <circle cx="102" cy="126" r="42" fill="#18264E" stroke="#7A95D5" stroke-width="4"/><circle cx="410" cy="126" r="42" fill="#18264E" stroke="#7A95D5" stroke-width="4"/>
+  <circle cx="101" cy="391" r="42" fill="#18264E" stroke="#7A95D5" stroke-width="4"/><circle cx="411" cy="391" r="42" fill="#18264E" stroke="#7A95D5" stroke-width="4"/>
+  <!-- request card -->
+  <path d="M81 113h20M81 128h27M81 143h17" stroke="#B7C8FF" stroke-width="6" stroke-linecap="round"/>
+  <!-- deadline card -->
+  <rect x="393" y="111" width="34" height="29" rx="5" fill="none" stroke="#C8FBFF" stroke-width="4"/><path d="M400 103v12M420 103v12M393 121h34" stroke="#C8FBFF" stroke-width="4" stroke-linecap="round"/><circle cx="403" cy="130" r="3" fill="#C8FBFF"/><circle cx="416" cy="130" r="3" fill="#C8FBFF"/>
+  <!-- notes card -->
+  <path d="M80 378h28M80 392h21M80 406h26" stroke="#B7C8FF" stroke-width="6" stroke-linecap="round"/>
+  <!-- completion card -->
+  <circle cx="411" cy="391" r="22" fill="url(#coral)"/><path d="M399 391l8 8 16-18" fill="none" stroke="#4C1930" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- central profile -->
+  <circle cx="256" cy="256" r="112" fill="#0F1B3B" stroke="#0A112A" stroke-width="10"/>
+  <circle cx="256" cy="256" r="94" fill="none" stroke="#6C8DE1" stroke-opacity=".65" stroke-width="3" stroke-dasharray="7 10"/>
+  <circle cx="256" cy="226" r="30" fill="url(#cyan)"/>
+  <path d="M196 326c8-39 30-57 60-57s52 18 60 57" fill="url(#cyan)"/>
+  <path d="M223 218c8-13 19-19 33-19s25 6 33 19" fill="none" stroke="#E8FFFF" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+  <!-- hub spark and status -->
+  <path d="M256 93v23M244.5 104.5h23" stroke="#FDE68A" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="351" cy="205" r="10" fill="#C8FBFF"/><circle cx="351" cy="205" r="19" fill="none" stroke="#C8FBFF" stroke-opacity=".3" stroke-width="3"/>
+</svg>

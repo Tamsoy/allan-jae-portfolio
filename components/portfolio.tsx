@@ -145,22 +145,19 @@ export function Portfolio() {
               <p className="mb-4 font-mono text-xs uppercase tracking-widest text-muted-foreground">Experiments & tools</p>
               <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">Side Quests</h2>
             </div>
-            <span className="font-mono text-xs text-muted-foreground">01 project</span>
+            <span className="font-mono text-xs text-muted-foreground">06 personal projects</span>
           </div>
-          <a href="/side-quests/keytone" className="group grid gap-8 border-t py-8 md:grid-cols-12 md:items-center md:gap-10 md:py-10">
-            <div className="overflow-hidden bg-muted md:col-span-7">
-              <Image src="/keytone/keytone-overview.jpg" alt="KeyTone desktop app showing keyboard sound profiles" width={1536} height={816} className="aspect-video w-full object-cover grayscale transition duration-500 group-hover:scale-[1.02] group-hover:grayscale-0" />
-            </div>
-            <div className="flex flex-col gap-5 md:col-span-5">
-              <div className="flex items-center justify-between gap-4">
-                <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">01 / 01</p>
-                <ArrowUpRight aria-hidden="true" className="size-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-              </div>
-              <h3 className="text-3xl font-semibold tracking-tight">KeyTone</h3>
-              <p className="leading-relaxed text-muted-foreground">A small sound library for keyboard enthusiasts: compare switches, hear the difference, and find your next favorite typing sound.</p>
-              <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Web audio · UI design · Sound</p>
-            </div>
-          </a>
+          <div className="grid gap-8 border-t pt-8 md:grid-cols-2 md:gap-x-8 md:gap-y-14 md:pt-10">{[
+            ['keytone', 'KeyTone', 'A Windows utility for personal keyboard sounds and per-key tuning.', '/projects/keytone/keytone-keyboard.png', 'Windows utility · C# · WPF'],
+            ['deskcheck', 'DeskCheck', 'A Windows diagnostic utility for clear, shareable support reports.', '/projects/deskcheck/deskcheck-ready.png', 'C# · WPF · IT support'],
+            ['sheetclean', 'SheetClean', 'A local CSV cleaner with visible changes and an audit trail.', '/projects/sheetclean/sheetclean-ready.png', 'C# · WPF · CSV processing'],
+            ['replyshelf', 'ReplyShelf', 'An offline response library with searchable templates and favorites.', '/projects/replyshelf/replyshelf-ready.png', 'C# · WPF · Local JSON'],
+            ['clienthub', 'ClientHub', 'An offline workspace for contacts, follow-ups, status and notes.', '/projects/clienthub/clienthub-ready.png', 'C# · WPF · Client operations'],
+            ['formflow', 'FormFlow', 'A local workspace for planning forms and tracking review status.', '/projects/formflow/formflow-ready.png', 'C# · WPF · Form planning'],
+          ].map(([slug, name, description, image, tags], index) => <a key={slug} href={`/side-quests/${slug}`} className="group flex flex-col gap-5">
+            <div className="overflow-hidden bg-muted"><Image src={image} alt={`${name} desktop app preview`} width={1600} height={1000} className="aspect-video w-full object-cover grayscale-0 transition duration-500 group-hover:scale-[1.02] motion-reduce:transition-none" /></div>
+            <div className="flex flex-col gap-3"><div className="flex items-center justify-between gap-4"><p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">{String(index + 1).padStart(2, '0')} / 06</p><ArrowUpRight aria-hidden="true" className="size-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 motion-reduce:transition-none" /></div><h3 className="text-2xl font-semibold tracking-tight">{name}</h3><p className="leading-relaxed text-muted-foreground">{description}</p><p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">{tags}</p></div>
+          </a>)}</div>
         </div>
       </section>
 
@@ -198,6 +195,7 @@ export function Portfolio() {
           <div className="flex flex-col gap-6">
             <p className="font-mono text-xs font-bold uppercase tracking-widest text-primary-foreground/60">Open to opportunities and collaborations</p>
             <a href="mailto:eparwaallanjae@gmail.com" className="text-[clamp(2.8rem,8vw,7rem)] font-semibold leading-none tracking-[-0.06em] text-balance underline decoration-1 underline-offset-8">Let&apos;s work together.</a>
+            <a href="mailto:eparwaallanjae@gmail.com" className="w-fit break-all text-lg underline underline-offset-4 sm:text-xl">eparwaallanjae@gmail.com</a>
           </div>
           <div className="flex flex-col gap-6 border-t border-primary-foreground/20 pt-6 text-sm sm:flex-row sm:items-center sm:justify-between">
             <p>© 2026 Allan Jae Eparwa</p>

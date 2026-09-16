@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 280" role="img" aria-labelledby="title desc">
+  <title id="title">SheetClean CSV cleaning wordmark</title>
+  <desc id="desc">SheetClean wordmark with the spreadsheet, CSV and data cleaning icon.</desc>
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2B4770"/><stop offset="1" stop-color="#0D1729"/></linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F7FBFF"/><stop offset="1" stop-color="#C7E0EC"/></linearGradient>
+    <linearGradient id="csv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6FE8C4"/><stop offset="1" stop-color="#2CC7AA"/></linearGradient>
+  </defs>
+  <g transform="translate(18 18) scale(.477)">
+    <rect x="16" y="16" width="480" height="480" rx="132" fill="url(#tile)"/><rect x="32" y="32" width="448" height="448" rx="116" fill="none" stroke="#A8C2DA" stroke-opacity=".36" stroke-width="3"/>
+    <rect x="112" y="90" width="288" height="336" rx="30" fill="url(#paper)"/><path d="M340 90v72h60" fill="#B4D0DD"/><path d="M340 90v48c0 14 10 24 24 24h36" fill="none" stroke="#8FB3C4" stroke-width="4"/>
+    <rect x="139" y="120" width="92" height="42" rx="14" fill="url(#csv)"/><text x="185" y="148" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="800" letter-spacing="2" fill="#06251F">CSV</text>
+    <rect x="139" y="187" width="234" height="137" rx="14" fill="#EAF5F8" stroke="#8FB3C4" stroke-width="3"/><path d="M139 221h234M139 255h234M139 289h234M195 187v137M252 187v137M310 187v137" stroke="#9DBBC7" stroke-width="3"/>
+    <rect x="146" y="194" width="42" height="20" rx="7" fill="#4E77D2"/><rect x="202" y="228" width="42" height="20" rx="7" fill="#F0B45D"/><rect x="317" y="262" width="42" height="20" rx="7" fill="#F07A82"/><rect x="259" y="296" width="42" height="20" rx="7" fill="#5DD8BB"/>
+    <path d="M102 370c38 33 91 48 151 41 54-6 100-32 135-76" fill="none" stroke="#6FE8C4" stroke-width="9" stroke-linecap="round"/><path d="M375 315l12 29 29 12-29 12-12 29-12-29-29-12 29-12z" fill="#F4D36B" stroke="#FFF3B2" stroke-width="3"/>
+    <circle cx="378" cy="380" r="45" fill="#0C2633" stroke="#0A1725" stroke-width="8"/><circle cx="378" cy="380" r="38" fill="#B8F27D"/><path d="M357 380l14 14 30-32" fill="none" stroke="#123521" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="300" y="142" font-family="Segoe UI,Arial,sans-serif" font-size="72" font-weight="700" fill="#EAF4FF">Sheet<tspan fill="#69E5C1">Clean</tspan></text>
+  <text x="306" y="195" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" letter-spacing="4" fill="#7F9AB5">CSV HYGIENE TOOL</text>
+</svg>

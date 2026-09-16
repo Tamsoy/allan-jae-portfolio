@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 280" role="img" aria-labelledby="title desc">
+  <title id="title">ReplyShelf reusable replies wordmark</title>
+  <desc id="desc">ReplyShelf message shelf emblem and reusable replies wordmark.</desc>
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#155E63"/><stop offset="1" stop-color="#0B2735"/></linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FDBA74"/><stop offset="1" stop-color="#F97316"/></linearGradient>
+  </defs>
+  <rect x="12" y="12" width="256" height="256" rx="66" fill="url(#tile)"/>
+  <rect x="22" y="22" width="236" height="236" rx="58" fill="none" stroke="#A7E5DC" stroke-opacity=".42" stroke-width="2"/>
+  <path d="M39 207h194" stroke="#9AE5D7" stroke-width="8" stroke-linecap="round"/><path d="M55 220l-10 27M217 220l10 27" stroke="#72B8B2" stroke-width="6" stroke-linecap="round"/>
+  <rect x="53" y="67" width="173" height="45" rx="12" fill="#103E4B" stroke="#78C9C1" stroke-opacity=".55" stroke-width="3" transform="rotate(-4 53 67)"/><path d="M76 88h83M76 102h52" stroke="#8AD1C9" stroke-width="7" stroke-linecap="round"/>
+  <rect x="65" y="105" width="176" height="47" rx="12" fill="#123F4C" stroke="#78C9C1" stroke-opacity=".62" stroke-width="3" transform="rotate(3 65 105)"/><path d="M87 126h85M87 140h54" stroke="#8AD1C9" stroke-width="7" stroke-linecap="round"/>
+  <rect x="49" y="133" width="194" height="73" rx="14" fill="#092532" stroke="#F7B267" stroke-width="3"/><rect x="63" y="147" width="127" height="10" rx="5" fill="#F8FFFE"/><rect x="63" y="166" width="96" height="8" rx="4" fill="#9AD9D0"/><path d="M65 204l-9 16 24-11" fill="#092532" stroke="#F7B267" stroke-width="3"/>
+  <circle cx="206" cy="169" r="30" fill="#08202B" stroke="#06151E" stroke-width="5"/><circle cx="206" cy="169" r="24" fill="url(#orange)" stroke="#FFE7CE" stroke-width="2"/><path d="M198 157v24l8-5 8 5v-24M201 169l5 5 8-9" fill="none" stroke="#4A1E0A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="76" cy="52" r="5" fill="#F97316"/><path d="M210 42v18M201 51h18" stroke="#FDE68A" stroke-width="4" stroke-linecap="round"/>
+  <text x="320" y="137" fill="#12343D" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="600" letter-spacing="-2">ReplyShelf</text><text x="324" y="184" fill="#52717A" font-family="Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="3">REUSABLE REPLIES</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">ReplyShelf reusable replies logo</title>
+  <desc id="desc">A glassmorphism app tile showing a shelf of message cards, a highlighted reply, a bookmark check, and a speech bubble.</desc>
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#155E63"/><stop offset="1" stop-color="#0B2735"/></linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F8FFFE"/><stop offset="1" stop-color="#BFF6EA"/></linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FDBA74"/><stop offset="1" stop-color="#F97316"/></linearGradient>
+  </defs>
+  <rect x="12" y="12" width="488" height="488" rx="126" fill="url(#tile)"/>
+  <path d="M117 34h265c57 0 96 40 96 97v31c-109-44-248-64-366-42v-20c0-37 5-51 5-66Z" fill="#fff" opacity=".075"/>
+  <rect x="28" y="28" width="456" height="456" rx="112" fill="none" stroke="#A7E5DC" stroke-opacity=".42" stroke-width="3"/>
+  <!-- message shelf -->
+  <path d="M80 390h352" stroke="#9AE5D7" stroke-width="18" stroke-linecap="round"/>
+  <path d="M102 409v39M410 409v39" stroke="#72B8B2" stroke-width="12" stroke-linecap="round"/>
+  <path d="M99 365h302" stroke="#4C9A9A" stroke-width="8" stroke-linecap="round"/>
+  <!-- stacked saved replies -->
+  <rect x="90" y="132" width="278" height="62" rx="16" fill="#103E4B" stroke="#78C9C1" stroke-opacity=".55" stroke-width="4" transform="rotate(-4 90 132)"/>
+  <path d="M124 156h134M124 177h91" stroke="#8AD1C9" stroke-width="11" stroke-linecap="round" opacity=".75"/>
+  <rect x="113" y="188" width="286" height="66" rx="16" fill="#123F4C" stroke="#78C9C1" stroke-opacity=".62" stroke-width="4" transform="rotate(3 113 188)"/>
+  <path d="M146 212h136M146 233h88" stroke="#8AD1C9" stroke-width="11" stroke-linecap="round" opacity=".78"/>
+  <!-- highlighted reply card -->
+  <rect x="83" y="235" width="320" height="122" rx="22" fill="#092532" stroke="#F7B267" stroke-width="5"/>
+  <rect x="104" y="257" width="210" height="18" rx="9" fill="url(#card)"/>
+  <rect x="104" y="289" width="162" height="13" rx="6" fill="#9AD9D0"/>
+  <rect x="104" y="314" width="194" height="13" rx="6" fill="#78BDB8" opacity=".75"/>
+  <!-- speech bubble tail and saved marker -->
+  <path d="M105 350l-15 24 38-16" fill="#092532" stroke="#F7B267" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="353" cy="286" r="53" fill="#08202B" stroke="#06151E" stroke-width="9"/>
+  <circle cx="353" cy="286" r="43" fill="url(#orange)" stroke="#FFE7CE" stroke-width="3"/>
+  <path d="M339 267v37l14-9 14 9v-37" fill="none" stroke="#4A1E0A" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M345 285l7 7 13-15" fill="none" stroke="#FFF5E9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- reply spark -->
+  <path d="M395 96v30M380 111h30" stroke="#FDE68A" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="105" cy="112" r="9" fill="#F97316"/><circle cx="105" cy="112" r="18" fill="none" stroke="#F97316" stroke-opacity=".3" stroke-width="3"/>
+</svg>

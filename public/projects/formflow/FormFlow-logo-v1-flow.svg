@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">FormFlow app icon</title>
+  <desc id="desc">A glassmorphism document form connected to workflow nodes with a completion checkmark.</desc>
+  <defs>
+    <linearGradient id="tile" x1="140" y1="80" x2="900" y2="940" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#27356f"/>
+      <stop offset="1" stop-color="#111a3c"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="310" y1="215" x2="690" y2="790" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f9fbff" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#dce7ff" stop-opacity=".84"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#7af5ff"/>
+      <stop offset="1" stop-color="#38c9f4"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#c8b8ff"/>
+      <stop offset="1" stop-color="#7a67e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#05091c" flood-opacity=".42"/>
+    </filter>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="42" y="42" width="940" height="940" rx="230" fill="url(#tile)" stroke="#6d7fd6" stroke-opacity=".72" stroke-width="8" filter="url(#shadow)"/>
+  <path d="M126 308C260 102 482 72 704 124c140 33 218 126 232 238" fill="none" stroke="#8be9ff" stroke-opacity=".18" stroke-width="34" stroke-linecap="round"/>
+  <path d="M126 756c142 150 379 198 608 98 83-36 143-90 186-159" fill="none" stroke="#a994ff" stroke-opacity=".14" stroke-width="28" stroke-linecap="round"/>
+
+  <!-- workflow route behind the form -->
+  <path d="M200 532C200 426 258 360 326 360h58M698 360h46c73 0 122 58 122 132v44" fill="none" stroke="#77eaf7" stroke-opacity=".86" stroke-width="16" stroke-linecap="round"/>
+  <path d="M202 724c4 88 64 132 146 132h54M698 856h36c76 0 126-48 126-124v-74" fill="none" stroke="#aa98ff" stroke-opacity=".86" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="188" cy="532" r="42" fill="#1b2b61" stroke="#71e8f6" stroke-width="10"/>
+  <circle cx="188" cy="724" r="42" fill="#1b2b61" stroke="#ad9bff" stroke-width="10"/>
+  <circle cx="868" cy="536" r="42" fill="#1b2b61" stroke="#71e8f6" stroke-width="10"/>
+  <circle cx="868" cy="732" r="42" fill="#1b2b61" stroke="#ad9bff" stroke-width="10"/>
+  <circle cx="188" cy="532" r="10" fill="#fff"/><circle cx="188" cy="724" r="10" fill="#fff"/>
+  <path d="M850 536l15 15 28-33M850 732l15 15 28-33" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- central form sheet -->
+  <g filter="url(#shadow)">
+    <path d="M326 184h266l116 116v486c0 26-21 47-47 47H326c-26 0-47-21-47-47V231c0-26 21-47 47-47Z" fill="url(#paper)" stroke="#fff" stroke-opacity=".88" stroke-width="8"/>
+    <path d="M592 184v103c0 11 9 20 20 20h96" fill="#c9d8ff" fill-opacity=".78" stroke="#fff" stroke-opacity=".7" stroke-width="8"/>
+    <rect x="352" y="372" width="248" height="24" rx="12" fill="#4f67b7" fill-opacity=".72"/>
+    <rect x="352" y="438" width="310" height="54" rx="16" fill="#ffffff" fill-opacity=".64" stroke="#93a9e6" stroke-width="5"/>
+    <circle cx="382" cy="465" r="12" fill="#6b5de6"/>
+    <rect x="412" y="454" width="208" height="22" rx="11" fill="#6d80bf" fill-opacity=".6"/>
+    <rect x="352" y="528" width="310" height="54" rx="16" fill="#ffffff" fill-opacity=".64" stroke="#93a9e6" stroke-width="5"/>
+    <circle cx="382" cy="555" r="12" fill="#3dcce8"/>
+    <rect x="412" y="544" width="176" height="22" rx="11" fill="#6d80bf" fill-opacity=".6"/>
+    <rect x="352" y="618" width="182" height="54" rx="16" fill="#ffffff" fill-opacity=".64" stroke="#93a9e6" stroke-width="5"/>
+    <circle cx="382" cy="645" r="12" fill="#6b5de6"/>
+    <rect x="412" y="634" width="86" height="22" rx="11" fill="#6d80bf" fill-opacity=".6"/>
+    <circle cx="623" cy="646" r="50" fill="url(#cyan)" filter="url(#glow)"/>
+    <path d="M597 646l18 18 36-41" fill="none" stroke="#0d2352" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M744 360l28 28-28 28" fill="none" stroke="#77eaf7" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M746 812l28-28-28-28" fill="none" stroke="#aa98ff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
