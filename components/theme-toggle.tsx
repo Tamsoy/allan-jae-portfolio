@@ -1,28 +1,38 @@
 'use client'
 
-import { Moon, Sun } from 'lucide-react'
+import { Moon, Sun, Volume2, VolumeX } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { useSoundFeedback } from '@/components/sound-feedback'
+import { useThemeTransition } from '@/components/theme-transition'
 
 export function ThemeToggle() {
-  function toggleTheme() {
-    const root = document.documentElement
-    const isDark = root.classList.contains('dark')
-    root.classList.toggle('dark', !isDark)
-    root.classList.toggle('light', isDark)
-    document.cookie = `theme=${isDark ? 'light' : 'dark'}; path=/; max-age=31536000; samesite=lax`
-  }
+  const { isDark, toggleTheme } = useThemeTransition()
+  const { enabled, toggleSound } = useSoundFeedback()
 
   return (
-    <Button
-      type="button"
-      variant="outline"
-      size="icon"
-      onClick={toggleTheme}
-      aria-label="Toggle color theme"
-      className="rounded-full"
-    >
-      <Sun className="hidden dark:block" aria-hidden="true" />
-      <Moon className="block dark:hidden" aria-hidden="true" />
-    </Button>
+    <div className="flex items-center gap-2">
+      <Button
+        type="button"
+        variant="outline"
+        size="icon"
+        onClick={(event) => toggleTheme({ clientX: event.clientX, clientY: event.clientY })}
+        aria-label={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
+        title={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
+        className="theme-control rounded-full"
+      >
+        {isDark ? <Sun className="size-4" aria-hidden="true" /> : <Moon className="size-4" aria-hidden="true" />}
+      </Button>
+      <Button
+        type="button"
+        variant="outline"
+        size="icon"
+        onClick={toggleSound}
+        aria-label={enabled ? 'Mute interface sounds' : 'Enable interface sounds'}
+        title={enabled ? 'Mute interface sounds' : 'Enable interface sounds'}
+        className="theme-control rounded-full"
+      >
+        {enabled ? <Volume2 className="size-4" aria-hidden="true" /> : <VolumeX className="size-4" aria-hidden="true" />}
+      </Button>
+    </div>
   )
 }

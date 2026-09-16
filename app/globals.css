@@ -77,6 +77,10 @@
 }
 
 @layer base {
+  ::view-transition-old(root),
+  ::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+  ::view-transition-new(root) { z-index: 1; }
+  ::view-transition-old(root) { z-index: 0; }
   * { @apply border-border outline-ring/50; }
   html { @apply scroll-smooth bg-background; }
   body { @apply bg-background text-foreground; }
@@ -85,4 +89,9 @@
 
 @layer components {
   .nav-link { @apply text-muted-foreground transition-colors hover:text-foreground; }
+  .theme-control svg { transition: transform 180ms ease, opacity 180ms ease; }
+  .theme-control:hover svg { transform: rotate(-12deg) scale(1.08); }
+  @media (prefers-reduced-motion: reduce) {
+    .theme-control svg { transition: none; }
+  }
 }
