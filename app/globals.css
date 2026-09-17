@@ -105,7 +105,7 @@
   @media (max-width: 767px) {
     .hero-intro-group { gap: 0.625rem; }
     .hero-intro-group + .grid { padding-top: 2.75rem; }
-    .hero-socials { gap: 0.5rem; }
+    .hero-socials { justify-content: center; gap: 0.5rem; }
     .experience-heading { align-items: center; flex-direction: row; justify-content: space-between; margin-bottom: 2.75rem; padding-bottom: 1.5rem; }
     .experience-heading span { flex-shrink: 0; font-size: 0.75rem; }
   }
