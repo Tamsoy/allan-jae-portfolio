@@ -105,8 +105,8 @@
     .hero-intro-group { gap: 0.625rem; }
     .hero-intro-group + .grid { padding-top: 2.75rem; }
     .hero-socials { gap: 0.5rem; }
-    .experience-heading { align-items: flex-start; flex-direction: column; margin-bottom: 2.75rem; padding-bottom: 1.5rem; }
-    .experience-heading span { font-size: 0.75rem; }
+    .experience-heading { align-items: center; flex-direction: row; justify-content: space-between; margin-bottom: 2.75rem; padding-bottom: 1.5rem; }
+    .experience-heading span { flex-shrink: 0; font-size: 0.75rem; }
   }
   @media (min-width: 768px) { .mobile-navigation { display: none; } }
   @media (prefers-reduced-motion: reduce) { .mobile-navigation { transition: opacity 1ms linear; transform: none; } }
