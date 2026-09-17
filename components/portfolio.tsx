@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { ArrowDown, ArrowUpRight, Menu, X } from 'lucide-react'
+import { ArrowUpRight, Menu, X } from 'lucide-react'
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { useEffect, useRef, useState } from 'react'
@@ -112,9 +112,6 @@ export function Portfolio() {
             </div>
           </div>
         </div>
-        <a href="#experience" className="explore-link flex w-full items-center justify-between gap-2 border-t pt-6 font-mono text-xs font-bold uppercase tracking-widest">
-          <span>Explore experience</span><ArrowDown aria-hidden="true" className="size-4 shrink-0" />
-        </a>
       </section>
 
       <section id="experience" className="border-t">
