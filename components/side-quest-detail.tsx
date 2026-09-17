@@ -37,7 +37,8 @@ export const projects: Record<string, Project> = {
 
 const projectNavItems = [['Experience', '/#experience'], ['Side Quests', '/#side-quests'], ['Capabilities', '/#skills'], ['About', '/#about'], ['Contact', '/#contact']] as const
 
-export function SideQuestDetail({ project }: { project: Project }) {
+export function SideQuestDetail({ slug }: { slug: keyof typeof projects }) {
+  const project = projects[slug]
   const base = `/downloads/${project.slug}/`
   const [menuOpen, setMenuOpen] = useState(false)
   const menuButtonRef = useRef<HTMLButtonElement>(null)
