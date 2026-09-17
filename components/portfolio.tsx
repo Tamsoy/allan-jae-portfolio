@@ -116,7 +116,7 @@ export function Portfolio() {
 
       <section id="experience" className="border-t">
         <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
-          <div className="experience-heading mb-12 flex items-end justify-between border-b pb-6 md:mb-16">
+          <div className="experience-heading mb-12 flex w-full items-center justify-between border-b pb-6 md:mb-16">
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">Experience</h2>
             <span className="font-mono text-xs text-muted-foreground">2024 — 2026</span>
           </div>
