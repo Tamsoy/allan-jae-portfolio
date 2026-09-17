@@ -89,7 +89,7 @@ export function Portfolio() {
 
       <section id="top" className="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
         <div className="flex items-start justify-between gap-6 font-mono text-xs uppercase tracking-widest text-muted-foreground">
-          <div className="hero-intro-group flex max-w-xl flex-col gap-2"><p className="font-bold"><span className="hidden md:inline">IT Professional · AI-Assisted Web Developer · Technical Support</span><span className="hero-title-mobile md:hidden">IT PROFESSIONAL ·<br />AI-ASSISTED WEB DEVELOPER ·<br />TECHNICAL SUPPORT</span></p><p className="hero-availability normal-case tracking-normal">Open to IT, Technical Support, Web Development &amp; VA&nbsp;opportunities</p></div>
+          <div className="hero-intro-group flex max-w-xl flex-col gap-2"><p className="font-bold"><span className="hidden md:inline">IT Professional · AI-Assisted Web Developer · Technical Support</span><span className="hero-title-mobile md:hidden">IT PROFESSIONAL ·<br />AI-ASSISTED WEB DEVELOPER ·<br />TECHNICAL SUPPORT</span></p><p className="hero-availability hidden normal-case tracking-normal md:block">Open to IT, Technical Support, Web Development &amp; VA&nbsp;opportunities</p></div>
           <p className="hidden shrink-0 font-bold sm:block">Dumaguete City · Philippines</p>
         </div>
         <div className="grid items-start gap-8 pt-10 md:grid-cols-12 md:items-center md:gap-8 md:pt-24">
@@ -110,6 +110,7 @@ export function Portfolio() {
                 className="aspect-[4/5] w-full object-cover object-top grayscale-0 dark:grayscale"
               />
             </div>
+            <p className="hero-availability-mobile normal-case tracking-normal md:hidden">Open to IT, Technical Support, Web Development &amp; VA&nbsp;opportunities</p>
           </div>
         </div>
       </section>

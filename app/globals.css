@@ -98,6 +98,7 @@
   .menu-label { font-family: var(--font-geist-mono), monospace; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-foreground); }
   .hero-title-mobile { display: inline-block; line-height: 1.65; }
   .hero-availability { max-width: 19rem; font-size: 0.9375rem; line-height: 1.55; }
+  .hero-availability-mobile { max-width: 19rem; font-size: 0.9375rem; line-height: 1.55; }
   .hero-socials { margin-top: 1.75rem; }
   .explore-link { margin-top: 1.75rem; padding-bottom: 0.25rem; }
   .experience-heading { gap: 0.75rem; }
