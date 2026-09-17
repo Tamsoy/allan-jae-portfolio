@@ -1,7 +1,10 @@
+'use client'
+
 import Image from 'next/image'
-import { ArrowDown, ArrowUpRight } from 'lucide-react'
+import { ArrowDown, ArrowUpRight, Menu, X } from 'lucide-react'
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa'
 import { ThemeToggle } from '@/components/theme-toggle'
+import { useEffect, useRef, useState } from 'react'
 
 const experience = [
   {
@@ -45,20 +48,42 @@ const skillGroups = [
   { title: 'Languages', items: ['English (C1)', 'Filipino (Native)'] },
 ]
 
+const navItems = [['Experience', '#experience'], ['Side Quests', '#side-quests'], ['Capabilities', '#skills'], ['About', '#about'], ['Contact', '#contact']] as const
+
 export function Portfolio() {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const menuButtonRef = useRef<HTMLButtonElement>(null)
+
+  useEffect(() => {
+    const closeOnDesktop = () => { if (window.innerWidth >= 768) setMenuOpen(false) }
+    const closeOnEscape = (event: KeyboardEvent) => { if (event.key === 'Escape') { setMenuOpen(false); menuButtonRef.current?.focus() } }
+    window.addEventListener('resize', closeOnDesktop)
+    window.addEventListener('keydown', closeOnEscape)
+    document.body.style.overflow = menuOpen ? 'hidden' : ''
+    return () => { window.removeEventListener('resize', closeOnDesktop); window.removeEventListener('keydown', closeOnEscape); document.body.style.overflow = '' }
+  }, [menuOpen])
+
+  const closeMenu = () => { setMenuOpen(false); menuButtonRef.current?.focus() }
+
   return (
     <main>
-      <header className="sticky top-0 border-b bg-background/90 backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
-          <a href="#top" className="font-mono text-sm font-semibold tracking-tight" aria-label="Allan Jae Eparwa, home">AJ AE</a>
+      <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur-md">
+        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:h-auto md:px-8 md:py-4">
+          <a href="#top" onClick={() => setMenuOpen(false)} className="font-mono text-sm font-semibold tracking-tight" aria-label="Allan Jae Eparwa, home">AJ AE</a>
           <nav className="hidden items-center gap-8 text-sm md:flex" aria-label="Primary navigation">
-            <a className="nav-link" href="#experience">Experience</a>
-            <a className="nav-link" href="#side-quests">Side Quests</a>
-            <a className="nav-link" href="#skills">Capabilities</a>
-            <a className="nav-link" href="#about">About</a>
-            <a className="nav-link" href="#contact">Contact</a>
+            {navItems.map(([label, href]) => <a key={href} className="nav-link" href={href}>{label}</a>)}
           </nav>
-          <ThemeToggle />
+          <div className="hidden md:block"><ThemeToggle /></div>
+          <button ref={menuButtonRef} type="button" className="flex size-11 items-center justify-center md:hidden" aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={menuOpen} aria-controls="mobile-navigation" onClick={() => setMenuOpen((open) => !open)}>
+            {menuOpen ? <X className="size-5" aria-hidden="true" /> : <Menu className="size-5" aria-hidden="true" />}
+          </button>
+        </div>
+        <div id="mobile-navigation" aria-hidden={!menuOpen} className={`mobile-navigation md:hidden ${menuOpen ? 'mobile-navigation-open' : ''}`}>
+          <nav className="flex flex-col" aria-label="Mobile navigation">
+            {navItems.map(([label, href]) => <a key={href} href={href} onClick={closeMenu} className="mobile-nav-link">{label}</a>)}
+          </nav>
+          <div className="mobile-menu-group"><p className="menu-label">Appearance &amp; sound</p><ThemeToggle /></div>
+          <div className="mobile-menu-group flex flex-col items-start gap-4"><a href="/downloads/Allan-Jae-Eparwa-Resume-CV.pdf" download onClick={closeMenu} className="underline underline-offset-4">Download résumé</a><p className="text-sm text-muted-foreground">For opportunities, reach me at:</p><a href="mailto:eparwaallanjae@gmail.com" onClick={closeMenu} className="break-all underline underline-offset-4">eparwaallanjae@gmail.com</a></div>
         </div>
       </header>
 
@@ -67,13 +92,14 @@ export function Portfolio() {
           <div className="flex max-w-xl flex-col gap-2"><p className="font-bold">IT Professional · AI-Assisted Web Developer · Technical Support</p><p className="normal-case tracking-normal">Open to IT, Technical Support, Web Development &amp; VA opportunities</p></div>
           <p className="hidden shrink-0 font-bold sm:block">Dumaguete City · Philippines</p>
         </div>
-        <div className="grid items-center gap-10 pt-16 md:grid-cols-12 md:gap-8 md:pt-24">
-          <div className="flex flex-col gap-7 md:col-span-8">
+        <div className="grid items-start gap-8 pt-10 md:grid-cols-12 md:items-center md:gap-8 md:pt-24">
+          <div className="order-2 flex flex-col gap-7 md:order-1 md:col-span-8">
             <h1 className="font-sans text-[clamp(4rem,10vw,9rem)] font-semibold leading-[0.82] tracking-[-0.075em] text-balance">Allan Jae</h1>
             <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">I build useful web experiences with AI-assisted tools, solve technical problems, and help teams work more efficiently.</p>
-            <div className="flex flex-wrap gap-3"><a href="#side-quests" className="border bg-primary px-5 py-3 text-sm font-medium text-primary-foreground">View my projects</a><a href="/downloads/Allan-Jae-Eparwa-Resume-CV.pdf" download aria-label="Download Allan Jae Eparwa’s résumé as a PDF" className="border px-5 py-3 text-sm font-medium">Download résumé</a></div>
+            <div className="flex flex-col gap-3 min-[390px]:flex-row"><a href="#side-quests" className="flex min-h-12 items-center justify-center border bg-primary px-5 py-3 text-sm font-medium text-primary-foreground">View my projects</a><a href="/downloads/Allan-Jae-Eparwa-Resume-CV.pdf" download aria-label="Download Allan Jae Eparwa’s résumé as a PDF" className="flex min-h-12 items-center justify-center border px-5 py-3 text-sm font-medium">Download résumé</a></div>
+            <nav className="flex items-center gap-2 pt-2" aria-label="Social media profiles">{[['Facebook', FaFacebookF, 'https://facebook.com/allanjae.eparwa'], ['Instagram', FaInstagram, 'https://instagram.com/aint.ajae'], ['LinkedIn', FaLinkedinIn, 'https://linkedin.com/in/allan-jae-eparwa-3b635b427'], ['WhatsApp', FaWhatsapp, 'https://wa.me/639383169656']].map(([label, Icon, href]) => <a key={label as string} href={href as string} target="_blank" rel="noreferrer" className="flex size-10 items-center justify-center border transition-colors hover:bg-primary hover:text-primary-foreground" aria-label={`${label as string} profile`}><Icon aria-hidden="true" className="size-4" /></a>)}</nav>
           </div>
-          <div className="flex flex-col gap-4 md:col-span-4">
+          <div className="order-1 flex flex-col gap-4 md:order-2 md:col-span-4">
             <div className="overflow-hidden bg-muted">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%2011%2C%202026%2C%2002_14_24%20PM-3bx7F1fzad1cLygsdrdtWHfgS8XFjJ.png"
@@ -84,7 +110,7 @@ export function Portfolio() {
                 className="aspect-[4/5] w-full object-cover object-top grayscale-0 dark:grayscale"
               />
             </div>
-            <nav className="flex items-center justify-center gap-2" aria-label="Social media profiles">
+            <nav className="hidden items-center justify-center gap-2 md:flex" aria-label="Social media profiles">
               <a href="https://facebook.com/allanjae.eparwa" target="_blank" rel="noreferrer" className="flex size-10 items-center justify-center border transition-colors hover:bg-primary hover:text-primary-foreground" aria-label="Facebook profile">
                 <FaFacebookF aria-hidden="true" className="size-4" />
               </a>
