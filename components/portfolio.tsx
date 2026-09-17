@@ -5,41 +5,44 @@ import { ThemeToggle } from '@/components/theme-toggle'
 
 const experience = [
   {
-    period: 'May 2026 — July 2026',
-    role: 'Community Coordinator & Programmer',
+    period: 'May 2026 — September 2026',
+    role: 'Programmer & Community Coordinator',
     company: 'LFT Curated Workspaces',
-    location: 'Dumaguete City',
-    description: 'Developed and maintained web features, supported daily coworking operations, and introduced AI-powered automation to reduce administrative work.',
+    location: 'Dumaguete City, Negros Oriental',
+    description: 'Developed and maintained web features for internal systems and the company website. Coordinated daily coworking operations and supported members and visitors. Implemented automation and AI-powered tools to reduce manual administrative work.',
     href: 'https://lftdumaguete.com',
   },
   {
-    period: 'Oct 2025 — Mar 2026',
+    period: 'October 2025 — March 2026',
     role: 'Technical Support Specialist',
-    company: 'Zimplistic · Rotimatic',
-    location: 'Remote support',
-    description: 'Supported 50+ customers daily, diagnosing hardware and software issues through root-cause analysis and clear, step-by-step guidance.',
+    company: 'Zimplistic Pte Ltd (Rotimatic.com)',
+    location: 'Dumaguete City, Negros Oriental',
+    description: 'Supported 50+ customers daily with machine setup, operation, and performance issues. Diagnosed hardware and software faults through root-cause analysis and step-by-step troubleshooting. Provided clear technical guidance to improve customer experience and reduce recurring support requests.',
     href: 'https://rotimatic.com',
   },
   {
     period: 'May 2025',
-    role: 'Technical Support · CCS Operator',
-    company: 'Miru Systems',
+    role: 'Technical Support (CCS Operator)',
+    company: 'Miru Systems – 2025 Philippine National Election',
     location: 'Siaton, Negros Oriental',
-    description: 'Supported election IT operations serving 57,737+ voters while maintaining complete incident, audit, and data-integrity documentation.',
+    description: 'Supported election IT operations serving over 57,737 voters. Troubleshot system issues to minimize operational downtime. Logged incidents and resolutions with 100% compliance with audit and data-integrity requirements.',
   },
   {
     period: 'Aug 2024 — Oct 2024',
-    role: 'AI Data Contributor',
+    role: 'AI Training Task Contributor',
     company: 'Remotasks & Outlier',
-    location: 'Dumaguete City',
-    description: 'Annotated 2,000+ images and videos, categorized language data, and evaluated chatbot responses to improve AI model quality.',
+    location: 'Dumaguete City, Negros Oriental',
+    description: 'Annotated over 2,000 images and videos for computer-vision and autonomous-driving datasets. Transcribed and categorized language data. Evaluated chatbot responses and provided structured feedback.',
   },
 ]
 
 const skillGroups = [
-  { title: 'Development', items: ['Web Development', 'WordPress', 'Wix', 'Elementor', 'AI Tools & Automation', 'ChatGPT', 'Claude', 'Gemini', 'Lovable', 'v0'] },
-  { title: 'Technical Support', items: ['Hardware Troubleshooting', 'Software Troubleshooting', 'Remote Support', 'Root-Cause Analysis', 'IT Operations'] },
-  { title: 'Creative & Productivity', items: ['Adobe Photoshop', 'Adobe Illustrator', 'Canva', 'CapCut', 'Microsoft Office', 'Google Workspace'] },
+  { title: 'Web Development and AI-Assisted Tools', items: ['Web Development', 'WordPress', 'Wix', 'Elementor', 'ChatGPT', 'Claude', 'Gemini', 'Cursor', 'Lovable', 'v0', 'Codex', 'Claude Code'] },
+  { title: 'Technical Support', items: ['Technical Support', 'Hardware Troubleshooting', 'Software Troubleshooting', 'Remote Customer Support', 'Root-Cause Analysis', 'Incident Documentation', 'IT Operations'] },
+  { title: 'Creative Tools', items: ['Canva', 'Adobe Photoshop', 'Adobe Illustrator', 'CapCut'] },
+  { title: 'Productivity and Operations', items: ['Microsoft Office', 'Google Workspace', 'Odoo'] },
+  { title: 'Communication and Customer Support', items: ['Slack', 'Intercom', 'Zoom', 'Discord'] },
+  { title: 'Languages', items: ['English (C1)', 'Filipino (Native)'] },
 ]
 
 export function Portfolio() {
@@ -51,7 +54,7 @@ export function Portfolio() {
           <nav className="hidden items-center gap-8 text-sm md:flex" aria-label="Primary navigation">
             <a className="nav-link" href="#experience">Experience</a>
             <a className="nav-link" href="#side-quests">Side Quests</a>
-            <a className="nav-link" href="#skills">Skills</a>
+            <a className="nav-link" href="#skills">Capabilities</a>
             <a className="nav-link" href="#about">About</a>
             <a className="nav-link" href="#contact">Contact</a>
           </nav>
@@ -59,17 +62,16 @@ export function Portfolio() {
         </div>
       </header>
 
-      <section id="top" className="mx-auto flex min-h-[calc(100svh-65px)] max-w-7xl flex-col justify-between px-5 py-10 md:px-8 md:py-14">
-        <div className="flex items-center justify-between font-mono text-xs uppercase tracking-widest text-muted-foreground">
-          <p className="font-bold">IT Professional · Developer · Technical Support</p>
-          <p className="hidden sm:block font-bold">Dumaguete City · Philippines</p>
+      <section id="top" className="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
+        <div className="flex items-start justify-between gap-6 font-mono text-xs uppercase tracking-widest text-muted-foreground">
+          <div className="flex max-w-xl flex-col gap-2"><p className="font-bold">IT Professional · AI-Assisted Web Developer · Technical Support</p><p className="normal-case tracking-normal">Open to IT, Technical Support, Web Development &amp; VA opportunities</p></div>
+          <p className="hidden shrink-0 font-bold sm:block">Dumaguete City · Philippines</p>
         </div>
-        <div className="grid items-end gap-8 py-12 md:grid-cols-12 md:py-16">
+        <div className="grid items-center gap-10 pt-16 md:grid-cols-12 md:gap-8 md:pt-24">
           <div className="flex flex-col gap-7 md:col-span-8">
             <h1 className="font-sans text-[clamp(4rem,10vw,9rem)] font-semibold leading-[0.82] tracking-[-0.075em] text-balance">Allan Jae</h1>
-            <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-              I build useful web experiences, solve technical problems, and apply automation to help people and teams work better.
-            </p>
+            <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">I build useful web experiences with AI-assisted tools, solve technical problems, and help teams work more efficiently.</p>
+            <div className="flex flex-wrap gap-3"><a href="#side-quests" className="border bg-primary px-5 py-3 text-sm font-medium text-primary-foreground">View my projects</a><a href="/downloads/Allan-Jae-Eparwa-Resume-CV.pdf" download aria-label="Download Allan Jae Eparwa’s résumé as a PDF" className="border px-5 py-3 text-sm font-medium">Download résumé</a></div>
           </div>
           <div className="flex flex-col gap-4 md:col-span-4">
             <div className="overflow-hidden bg-muted">
@@ -101,17 +103,6 @@ export function Portfolio() {
         <a href="#experience" className="flex w-fit items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest">
           Explore experience <ArrowDown aria-hidden="true" className="size-4" />
         </a>
-      </section>
-
-      <section aria-label="Career highlights" className="border-t">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 px-5 md:grid-cols-3 md:px-8">
-          {[['50+', 'Customers supported daily'], ['57,737+', 'Voters served'], ['2,000+', 'AI assets annotated']].map(([value, label]) => (
-            <div key={label} className="flex flex-col gap-2 border-b py-10 font-bold last:border-b-0 md:border-b-0 md:border-r md:px-8 md:first:pl-0 md:last:border-r-0">
-              <p className="text-5xl font-semibold tracking-tight">{value}</p>
-              <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">{label}</p>
-            </div>
-          ))}
-        </div>
       </section>
 
       <section id="experience" className="border-t">
@@ -164,7 +155,7 @@ export function Portfolio() {
       <section id="skills" className="border-t bg-muted">
         <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
           <p className="mb-12 font-mono text-xs uppercase tracking-widest text-muted-foreground">Capabilities</p>
-          <div className="grid gap-12 md:grid-cols-3 md:gap-8">
+          <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 md:gap-x-8 md:gap-y-14">
             {skillGroups.map((group) => (
               <div key={group.title} className="flex flex-col gap-6">
                 <h2 className="text-2xl font-semibold tracking-tight">{group.title}</h2>
@@ -181,11 +172,12 @@ export function Portfolio() {
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 md:grid-cols-12 md:px-8 md:py-28">
           <p className="font-mono text-xs font-bold uppercase tracking-widest text-muted-foreground md:col-span-3">About</p>
           <div className="flex flex-col gap-10 md:col-span-8 md:col-start-5">
-            <p className="text-3xl font-medium leading-tight tracking-tight text-balance md:text-5xl">Adaptable, detail-oriented, and driven by the challenge of making technology work better for people.</p>
+            <p className="text-3xl font-medium leading-tight tracking-tight text-balance md:text-5xl">IT professional and BS Information Technology graduate focused on making technology work better for people.</p>
             <div className="grid gap-8 text-muted-foreground sm:grid-cols-2">
-              <p className="leading-relaxed">I&apos;m a 2025 BS Information Technology graduate from Negros Oriental State University with hands-on experience across web development, technical support, AI training, and IT operations.</p>
-              <p className="leading-relaxed">I work comfortably in fast-paced environments where thoughtful troubleshooting, clear communication, and continuous learning make a measurable difference. I speak English at C1 level and Filipino natively.</p>
+              <p className="leading-relaxed">I have experience in remote technical support, AI-assisted web development, IT operations, and workflow automation. I bring practical troubleshooting, customer guidance, digital tools, and process improvement to the work.</p>
+              <p className="leading-relaxed">I graduated from Negros Oriental State University in 2025 and created practical Windows productivity tools alongside my professional work. I speak English at C1 level and Filipino natively.</p>
             </div>
+            <div className="border-t pt-6"><p className="mb-2 font-mono text-xs uppercase tracking-widest text-muted-foreground">Education</p><p className="font-medium">Bachelor of Science in Information Technology</p><p className="text-muted-foreground">Negros Oriental State University · 2025 · Dumaguete City, Negros Oriental</p></div>
           </div>
         </div>
       </section>
@@ -193,9 +185,10 @@ export function Portfolio() {
       <footer id="contact" className="border-t bg-primary text-primary-foreground">
         <div className="mx-auto flex max-w-7xl flex-col gap-16 px-5 py-16 md:px-8 md:py-24">
           <div className="flex flex-col gap-6">
-            <p className="font-mono text-xs font-bold uppercase tracking-widest text-primary-foreground/60">Open to opportunities and collaborations</p>
+            <p className="font-mono text-xs font-bold uppercase tracking-widest text-primary-foreground/60">I’m open to IT support, technical support, web development, AI-assisted development, virtual assistant, and technical operations opportunities.</p>
             <a href="mailto:eparwaallanjae@gmail.com" className="text-[clamp(2.8rem,8vw,7rem)] font-semibold leading-none tracking-[-0.06em] text-balance underline decoration-1 underline-offset-8">Let&apos;s work together.</a>
             <a href="mailto:eparwaallanjae@gmail.com" className="w-fit break-all text-lg underline underline-offset-4 sm:text-xl">eparwaallanjae@gmail.com</a>
+            <div className="flex flex-wrap gap-3 pt-2"><a href="mailto:eparwaallanjae@gmail.com" className="border border-primary-foreground/30 px-4 py-2 text-sm">Send an email</a><a href="/downloads/Allan-Jae-Eparwa-Resume-CV.pdf" download className="border border-primary-foreground/30 px-4 py-2 text-sm">Download résumé</a><a href="#side-quests" className="border border-primary-foreground/30 px-4 py-2 text-sm">View projects</a></div>
           </div>
           <div className="flex flex-col gap-6 border-t border-primary-foreground/20 pt-6 text-sm sm:flex-row sm:items-center sm:justify-between">
             <p>© 2026 Allan Jae Eparwa</p>

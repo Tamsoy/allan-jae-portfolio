@@ -8,8 +8,15 @@ const geist = Geist({ subsets: ['latin'], variable: '--font-geist' })
 const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono' })
 
 export const metadata: Metadata = {
-  title: 'Allan Jae Eparwa — IT Professional & Web Developer',
-  description: 'Portfolio of Allan Jae Eparwa, an IT professional experienced in web development, technical support, AI training, automation, and IT operations.',
+  title: 'Allan Jae Eparwa | IT Professional, AI-Assisted Web Developer and Technical Support',
+  description: 'Portfolio of Allan Jae Eparwa, an IT professional, AI-assisted web developer, and technical support specialist based in Dumaguete City, Philippines.',
+  alternates: { canonical: 'https://allan-jae.vercel.app/' },
+  openGraph: {
+    title: 'Allan Jae Eparwa | IT Professional, AI-Assisted Web Developer and Technical Support',
+    description: 'Portfolio of Allan Jae Eparwa, an IT professional, AI-assisted web developer, and technical support specialist based in Dumaguete City, Philippines.',
+    url: 'https://allan-jae.vercel.app/',
+    type: 'website',
+  },
   generator: 'v0.app',
 }
 
