@@ -89,7 +89,7 @@ export function Portfolio() {
 
       <section id="top" className="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
         <div className="flex items-start justify-between gap-6 font-mono text-xs uppercase tracking-widest text-muted-foreground">
-          <div className="flex max-w-xl flex-col gap-2"><p className="font-bold">IT Professional · AI-Assisted Web Developer · Technical Support</p><p className="normal-case tracking-normal">Open to IT, Technical Support, Web Development &amp; VA opportunities</p></div>
+          <div className="hero-intro-group flex max-w-xl flex-col gap-2"><p className="font-bold"><span className="hidden md:inline">IT Professional · AI-Assisted Web Developer · Technical Support</span><span className="hero-title-mobile md:hidden">IT PROFESSIONAL ·<br />AI-ASSISTED WEB DEVELOPER ·<br />TECHNICAL SUPPORT</span></p><p className="hero-availability normal-case tracking-normal">Open to IT, Technical Support, Web Development &amp; VA&nbsp;opportunities</p></div>
           <p className="hidden shrink-0 font-bold sm:block">Dumaguete City · Philippines</p>
         </div>
         <div className="grid items-start gap-8 pt-10 md:grid-cols-12 md:items-center md:gap-8 md:pt-24">
@@ -97,7 +97,7 @@ export function Portfolio() {
             <h1 className="font-sans text-[clamp(4rem,10vw,9rem)] font-semibold leading-[0.82] tracking-[-0.075em] text-balance">Allan Jae</h1>
             <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">I build useful web experiences with AI-assisted tools, solve technical problems, and help teams work more efficiently.</p>
             <div className="flex flex-col gap-3 min-[390px]:flex-row"><a href="#side-quests" className="flex min-h-12 items-center justify-center border bg-primary px-5 py-3 text-sm font-medium text-primary-foreground">View my projects</a><a href="/downloads/Allan-Jae-Eparwa-Resume-CV.pdf" download aria-label="Download Allan Jae Eparwa’s résumé as a PDF" className="flex min-h-12 items-center justify-center border px-5 py-3 text-sm font-medium">Download résumé</a></div>
-            <nav className="flex items-center gap-2 pt-2" aria-label="Social media profiles">{[['Facebook', FaFacebookF, 'https://facebook.com/allanjae.eparwa'], ['Instagram', FaInstagram, 'https://instagram.com/aint.ajae'], ['LinkedIn', FaLinkedinIn, 'https://linkedin.com/in/allan-jae-eparwa-3b635b427'], ['WhatsApp', FaWhatsapp, 'https://wa.me/639383169656']].map(([label, Icon, href]) => <a key={label as string} href={href as string} target="_blank" rel="noreferrer" className="flex size-10 items-center justify-center border transition-colors hover:bg-primary hover:text-primary-foreground" aria-label={`${label as string} profile`}><Icon aria-hidden="true" className="size-4" /></a>)}</nav>
+            <nav className="hero-socials flex items-center gap-2 pt-2" aria-label="Social media profiles">{[['Facebook', FaFacebookF, 'https://facebook.com/allanjae.eparwa'], ['Instagram', FaInstagram, 'https://instagram.com/aint.ajae'], ['LinkedIn', FaLinkedinIn, 'https://linkedin.com/in/allan-jae-eparwa-3b635b427'], ['WhatsApp', FaWhatsapp, 'https://wa.me/639383169656']].map(([label, Icon, href]) => <a key={label as string} href={href as string} target="_blank" rel="noreferrer" className="flex size-12 shrink-0 items-center justify-center border transition-colors hover:bg-primary hover:text-primary-foreground md:size-10" aria-label={`${label as string} profile`}><Icon aria-hidden="true" className="size-4" /></a>)}</nav>
           </div>
           <div className="order-1 flex flex-col gap-4 md:order-2 md:col-span-4">
             <div className="overflow-hidden bg-muted">
@@ -110,30 +110,16 @@ export function Portfolio() {
                 className="aspect-[4/5] w-full object-cover object-top grayscale-0 dark:grayscale"
               />
             </div>
-            <nav className="hidden items-center justify-center gap-2 md:flex" aria-label="Social media profiles">
-              <a href="https://facebook.com/allanjae.eparwa" target="_blank" rel="noreferrer" className="flex size-10 items-center justify-center border transition-colors hover:bg-primary hover:text-primary-foreground" aria-label="Facebook profile">
-                <FaFacebookF aria-hidden="true" className="size-4" />
-              </a>
-              <a href="https://instagram.com/aint.ajae" target="_blank" rel="noreferrer" className="flex size-10 items-center justify-center border transition-colors hover:bg-primary hover:text-primary-foreground" aria-label="Instagram profile">
-                <FaInstagram aria-hidden="true" className="size-4" />
-              </a>
-              <a href="https://linkedin.com/in/allan-jae-eparwa-3b635b427" target="_blank" rel="noreferrer" className="flex size-10 items-center justify-center border transition-colors hover:bg-primary hover:text-primary-foreground" aria-label="LinkedIn profile">
-                <FaLinkedinIn aria-hidden="true" className="size-4" />
-              </a>
-              <a href="https://wa.me/639383169656" target="_blank" rel="noreferrer" className="flex size-10 items-center justify-center border transition-colors hover:bg-primary hover:text-primary-foreground" aria-label="WhatsApp profile">
-                <FaWhatsapp aria-hidden="true" className="size-4" />
-              </a>
-            </nav>
           </div>
         </div>
-        <a href="#experience" className="flex w-fit items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest">
-          Explore experience <ArrowDown aria-hidden="true" className="size-4" />
+        <a href="#experience" className="explore-link flex w-full items-center justify-between gap-2 border-t pt-6 font-mono text-xs font-bold uppercase tracking-widest">
+          <span>Explore experience</span><ArrowDown aria-hidden="true" className="size-4 shrink-0" />
         </a>
       </section>
 
       <section id="experience" className="border-t">
         <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
-          <div className="mb-12 flex items-end justify-between md:mb-16">
+          <div className="experience-heading mb-12 flex items-end justify-between border-b pb-6 md:mb-16">
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">Experience</h2>
             <span className="font-mono text-xs text-muted-foreground">2024 — 2026</span>
           </div>

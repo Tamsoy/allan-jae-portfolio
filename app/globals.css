@@ -96,6 +96,18 @@
   .mobile-nav-link { display: flex; min-height: 3.5rem; align-items: center; border-bottom: 1px solid var(--border); font-size: 1.25rem; font-weight: 600; }
   .mobile-menu-group { display: flex; align-items: center; justify-content: space-between; gap: 1rem; border-bottom: 1px solid var(--border); padding: 1.5rem 0; }
   .menu-label { font-family: var(--font-geist-mono), monospace; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-foreground); }
+  .hero-title-mobile { display: inline-block; line-height: 1.65; }
+  .hero-availability { max-width: 19rem; font-size: 0.9375rem; line-height: 1.55; }
+  .hero-socials { margin-top: 1.75rem; }
+  .explore-link { margin-top: 1.75rem; padding-bottom: 0.25rem; }
+  .experience-heading { gap: 0.75rem; }
+  @media (max-width: 767px) {
+    .hero-intro-group { gap: 0.625rem; }
+    .hero-intro-group + .grid { padding-top: 2.75rem; }
+    .hero-socials { gap: 0.5rem; }
+    .experience-heading { align-items: flex-start; flex-direction: column; margin-bottom: 2.75rem; padding-bottom: 1.5rem; }
+    .experience-heading span { font-size: 0.75rem; }
+  }
   @media (min-width: 768px) { .mobile-navigation { display: none; } }
   @media (prefers-reduced-motion: reduce) { .mobile-navigation { transition: opacity 1ms linear; transform: none; } }
   .theme-control svg { transition: transform 180ms ease, opacity 180ms ease; }
