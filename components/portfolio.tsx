@@ -50,7 +50,7 @@ const skillGroups = [
   { title: 'Languages', items: ['English (C1)', 'Filipino (Native)'] },
 ]
 
-const navItems = [['Experience', '#experience'], ['Creations', '#creations'], ['Side Quests', '#side-quests'], ['Capabilities', '#skills'], ['About', '#about'], ['Contact', '#contact']] as const
+const navItems = [['Experience', '/experience'], ['Creations', '/creations'], ['Side Quests', '/side-quests'], ['Capabilities', '/capabilities'], ['About', '/about'], ['Contact', '/contact']] as const
 
 export function Portfolio() {
   const [menuOpen, setMenuOpen] = useState(false)
