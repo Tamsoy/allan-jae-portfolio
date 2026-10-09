@@ -4,14 +4,15 @@ import { useEffect, useState } from 'react'
 import { Play, X } from 'lucide-react'
 
 export const aiVideos = [
-  { title: '3D Style Documentary', category: '3D Style Documentary', id: '1iDy3WgoaPsMrkLXmLJ8YSXQ8bcca2OKZ' },
-  { title: 'Realistic Vlog', category: 'Realistic Vlog', id: '1G16baZM47RyV_MNYAhqRnyPFUK1PVqRP' },
-  { title: 'Skeleton Explainer', category: 'Skeleton Explainer', id: '1mzj_YILdD1ijVYfE3lhN0imQg_75oY6A' },
-  { title: 'Stickman Explainer', category: 'Stickman Explainer', id: '1dd0GAuEWxyn9HNBiM-7MybMHK6QCryt2' },
-  { title: 'VOX Style Documentary', category: 'VOX Style Documentary', id: '1rZYGC-6W09mrPsO0ehG4niNlsPpwQ7Ks' },
+  { title: '3D Style Documentary', category: '3D Style Documentary', id: '1iDy3WgoaPsMrkLXmLJ8YSXQ8bcca2OKZ', thumbnailId: '1iDy3WgoaPsMrkLXmLJ8YSXQ8bcca2OKZ' },
+  { title: 'Realistic Vlog', category: 'Realistic Vlog', id: '1G16baZM47RyV_MNYAhqRnyPFUK1PVqRP', thumbnailId: '1G16baZM47RyV_MNYAhqRnyPFUK1PVqRP' },
+  { title: 'Skeleton Explainer', category: 'Skeleton Explainer', id: '1mzj_YILdD1ijVYfE3lhN0imQg_75oY6A', thumbnailId: '1mzj_YILdD1ijVYfE3lhN0imQg_75oY6A' },
+  { title: 'Stickman Explainer Documentary', category: 'Stickman Explainer Documentary', id: '1dd0GAuEWxyn9HNBiM-7MybMHK6QCryt2', thumbnailId: '1dd0GAuEWxyn9HNBiM-7MybMHK6QCryt2' },
+  { title: 'VOX Style Documentary', category: 'VOX Style Documentary', id: '1rZYGC-6W09mrPsO0ehG4niNlsPpwQ7Ks', thumbnailId: '1rZYGC-6W09mrPsO0ehG4niNlsPpwQ7Ks' },
 ] as const
 
 const videoUrl = (id: string) => `https://drive.google.com/uc?export=download&id=${id}`
+const thumbnailUrl = (id: string) => `https://drive.google.com/thumbnail?id=${id}&sz=w1280`
 
 export function AiVideoCreations() {
   const [activeVideo, setActiveVideo] = useState<(typeof aiVideos)[number] | null>(null)
@@ -34,7 +35,7 @@ export function AiVideoCreations() {
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-x-8 md:gap-y-14">
           {aiVideos.map((video, index) => <button key={video.id} type="button" onClick={() => setActiveVideo(video)} className="group text-left">
             <div className="relative aspect-video overflow-hidden bg-muted">
-              <video className="h-full w-full object-cover grayscale transition duration-500 group-hover:scale-[1.02] group-hover:grayscale-0" src={videoUrl(video.id)} muted loop playsInline preload="metadata" onMouseEnter={(event) => event.currentTarget.play().catch(() => undefined)} onMouseLeave={(event) => { event.currentTarget.pause(); event.currentTarget.currentTime = 0 }} aria-label={`${video.title} preview`} />
+              <img className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]" src={thumbnailUrl(video.thumbnailId)} alt={`${video.title} thumbnail`} loading="lazy" />
               <span className="absolute inset-0 flex items-center justify-center bg-black/0 transition group-hover:bg-black/30"><span className="flex size-12 items-center justify-center rounded-full bg-white text-black opacity-0 transition group-hover:opacity-100"><Play className="ml-0.5 size-5 fill-current" aria-hidden="true" /></span></span>
             </div>
             <div className="mt-5 flex items-start justify-between gap-4"><div><p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">{String(index + 1).padStart(2, '0')} / 05</p><h3 className="mt-2 text-xl font-semibold tracking-tight">{video.title}</h3></div><span className="mt-1 text-xs text-muted-foreground">Play</span></div>

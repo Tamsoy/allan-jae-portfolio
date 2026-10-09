@@ -42,12 +42,7 @@ const experience = [
 ]
 
 const skillGroups = [
-  { title: 'AI Video and Web Development', items: ['AI Video Production', 'AI Video Editing', 'CapCut', 'Google Flow', 'Google AI Studio', 'Kling AI', 'Higgsfield', 'Web Development', 'WordPress', 'Wix', 'Elementor', 'ChatGPT', 'Claude', 'Gemini', 'Cursor', 'Lovable', 'v0', 'Codex', 'Claude Code'] },
-  { title: 'Technical Support', items: ['Technical Support', 'Hardware Troubleshooting', 'Software Troubleshooting', 'Remote Customer Support', 'Root-Cause Analysis', 'Incident Documentation', 'IT Operations'] },
-  { title: 'Creative Tools', items: ['Canva', 'Adobe Photoshop', 'Adobe Illustrator', 'CapCut'] },
-  { title: 'Productivity and Operations', items: ['Microsoft Office', 'Google Workspace', 'Odoo'] },
-  { title: 'Communication and Customer Support', items: ['Slack', 'Intercom', 'Zoom', 'Discord'] },
-  { title: 'Languages', items: ['English (C1)', 'Filipino (Native)'] },
+  { title: 'Skills and Technical Expertise', items: ['AI Video Production', 'AI Video Editing', 'Codex', 'Claude Code', 'Cursor', 'Lovable', 'v0', 'Grok', 'Gemini', 'Technical Support', 'Hardware Troubleshooting', 'Software Troubleshooting', 'Remote Customer Support', 'Root-Cause Analysis', 'Incident Documentation', 'IT Operations'] },
 ]
 
 const navItems = [['Experience', '/experience'], ['Creations', '/creations'], ['Side Quests', '/side-quests'], ['Capabilities', '/capabilities'], ['About', '/about'], ['Contact', '/contact']] as const
@@ -118,6 +113,8 @@ export function Portfolio() {
 
       <AiVideoCreations />
 
+      <ToolsShowcase />
+
       <section id="experience" className="border-t">
         <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
           <div className="experience-heading mb-12 flex w-full items-center justify-between pb-6 md:mb-16">
@@ -165,11 +162,10 @@ export function Portfolio() {
         </div>
       </section>
 
-      <ToolsShowcase />
-
       <section id="skills" className="border-t bg-muted">
         <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
-          <p className="mb-12 font-mono text-xs uppercase tracking-widest text-muted-foreground">Capabilities</p>
+          <p className="mb-4 font-mono text-xs uppercase tracking-widest text-muted-foreground">Capabilities</p>
+          <h2 className="mb-12 text-3xl font-semibold tracking-tight md:text-5xl">AI Video Creation · Web Development · Tech Support</h2>
           <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 md:gap-x-8 md:gap-y-14">
             {skillGroups.map((group) => (
               <div key={group.title} className="flex flex-col gap-6">
@@ -187,10 +183,10 @@ export function Portfolio() {
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 md:grid-cols-12 md:px-8 md:py-28">
           <p className="font-mono text-xs font-bold uppercase tracking-widest text-muted-foreground md:col-span-3">About</p>
           <div className="flex flex-col gap-10 md:col-span-8 md:col-start-5">
-            <p className="text-3xl font-medium leading-tight tracking-tight text-balance md:text-5xl">IT professional and BS Information Technology graduate focused on making technology work better for people.</p>
-            <div className="grid gap-8 text-muted-foreground sm:grid-cols-2">
-              <p className="leading-relaxed">I have experience in remote technical support, AI-assisted web development, IT operations, and workflow automation. I bring practical troubleshooting, customer guidance, digital tools, and process improvement to the work.</p>
-              <p className="leading-relaxed">I graduated from Negros Oriental State University in 2025 and created practical Windows productivity tools alongside my professional work. I speak English at C1 level and Filipino natively.</p>
+<p className="text-3xl font-medium leading-tight tracking-tight text-balance md:text-5xl">I focus on AI video production and editing, AI-assisted web development, creative AI tools, and practical technical support.</p>
+          <div className="grid gap-8 text-muted-foreground sm:grid-cols-2">
+            <p className="leading-relaxed">I create engaging visual content while exploring AI-assisted creative workflows that make production more accessible, intentional, and useful.</p>
+            <p className="leading-relaxed">I also build web projects and solve technical problems through clear troubleshooting, documentation, and thoughtful support.</p>
             </div>
             <div className="border-t pt-6"><p className="mb-2 font-mono text-xs uppercase tracking-widest text-muted-foreground">Education</p><p className="font-medium">Bachelor of Science in Information Technology</p><p className="text-muted-foreground">Negros Oriental State University · 2025 · Dumaguete City, Negros Oriental</p></div>
           </div>
