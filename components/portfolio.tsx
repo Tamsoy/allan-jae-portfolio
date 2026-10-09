@@ -4,6 +4,8 @@ import Image from 'next/image'
 import { ArrowUpRight, Menu, X } from 'lucide-react'
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa'
 import { ThemeToggle } from '@/components/theme-toggle'
+import { AiVideoCreations } from '@/components/ai-video-creations'
+import { ToolsShowcase } from '@/components/tools-showcase'
 import { useEffect, useRef, useState } from 'react'
 
 const experience = [
@@ -40,7 +42,7 @@ const experience = [
 ]
 
 const skillGroups = [
-  { title: 'Web Development and AI-Assisted Tools', items: ['Web Development', 'WordPress', 'Wix', 'Elementor', 'ChatGPT', 'Claude', 'Gemini', 'Cursor', 'Lovable', 'v0', 'Codex', 'Claude Code'] },
+  { title: 'AI Video and Web Development', items: ['AI Video Production', 'AI Video Editing', 'CapCut', 'Google Flow', 'Google AI Studio', 'Kling AI', 'Higgsfield', 'Web Development', 'WordPress', 'Wix', 'Elementor', 'ChatGPT', 'Claude', 'Gemini', 'Cursor', 'Lovable', 'v0', 'Codex', 'Claude Code'] },
   { title: 'Technical Support', items: ['Technical Support', 'Hardware Troubleshooting', 'Software Troubleshooting', 'Remote Customer Support', 'Root-Cause Analysis', 'Incident Documentation', 'IT Operations'] },
   { title: 'Creative Tools', items: ['Canva', 'Adobe Photoshop', 'Adobe Illustrator', 'CapCut'] },
   { title: 'Productivity and Operations', items: ['Microsoft Office', 'Google Workspace', 'Odoo'] },
@@ -48,7 +50,7 @@ const skillGroups = [
   { title: 'Languages', items: ['English (C1)', 'Filipino (Native)'] },
 ]
 
-const navItems = [['Experience', '#experience'], ['Side Quests', '#side-quests'], ['Capabilities', '#skills'], ['About', '#about'], ['Contact', '#contact']] as const
+const navItems = [['Experience', '#experience'], ['Creations', '#creations'], ['Side Quests', '#side-quests'], ['Capabilities', '#skills'], ['About', '#about'], ['Contact', '#contact']] as const
 
 export function Portfolio() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -89,7 +91,7 @@ export function Portfolio() {
 
       <section id="top" className="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
         <div className="flex items-start justify-between gap-6 font-mono text-xs uppercase tracking-widest text-muted-foreground">
-          <div className="hero-intro-group flex max-w-xl flex-col gap-2"><p className="font-bold"><span className="hidden md:inline">IT Professional · AI-Assisted Web Developer · Technical Support</span><span className="hero-title-mobile md:hidden">IT PROFESSIONAL ·<br />AI-ASSISTED WEB DEVELOPER ·<br />TECHNICAL SUPPORT</span></p><p className="hero-availability hidden normal-case tracking-normal md:block">Open to IT, Technical Support, Web Development &amp; VA&nbsp;opportunities</p></div>
+          <div className="hero-intro-group flex max-w-xl flex-col gap-2"><p className="font-bold"><span className="hidden md:inline">AI Video Specialist · AI-Assisted Web Developer · VA · Technical Support · IT Professional</span><span className="hero-title-mobile md:hidden">AI VIDEO SPECIALIST ·<br />AI-ASSISTED WEB DEVELOPER ·<br />VA · TECHNICAL SUPPORT ·<br />IT PROFESSIONAL</span></p></div>
           <p className="hidden shrink-0 font-bold sm:block">Dumaguete City · Philippines</p>
         </div>
         <div className="grid items-start gap-8 pt-10 md:grid-cols-12 md:items-center md:gap-8 md:pt-24">
@@ -110,10 +112,11 @@ export function Portfolio() {
                 className="aspect-[4/5] w-full object-cover object-top grayscale-0 dark:grayscale"
               />
             </div>
-            <p className="hero-availability-mobile normal-case tracking-normal md:hidden">Open to IT, Technical Support, Web Development &amp; VA&nbsp;opportunities</p>
           </div>
         </div>
       </section>
+
+      <AiVideoCreations />
 
       <section id="experience" className="border-t">
         <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
@@ -161,6 +164,8 @@ export function Portfolio() {
           </a>)}</div>
         </div>
       </section>
+
+      <ToolsShowcase />
 
       <section id="skills" className="border-t bg-muted">
         <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">

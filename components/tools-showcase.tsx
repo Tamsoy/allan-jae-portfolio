@@ -1,0 +1,7 @@
+const tools = [
+  ['CapCut', 'capcut'], ['Google Flow', 'google'], ['Google AI Studio', 'google'], ['ElevenLabs', 'elevenlabs'], ['Pixabay', 'pixabay'], ['Kling AI', 'klingai'], ['Higgsfield', 'higgsfield'], ['Adobe Photoshop', 'adobe-photoshop'], ['Adobe Illustrator', 'adobe-illustrator'], ['Canva', 'canva'], ['OpenAI', 'openai'], ['Claude', 'claude'],
+] as const
+
+export function ToolsShowcase() {
+  return <section id="tools" className="border-t bg-muted"><div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28"><div className="mb-12 flex items-end justify-between"><div><p className="mb-4 font-mono text-xs uppercase tracking-widest text-muted-foreground">Production stack</p><h2 className="text-3xl font-semibold tracking-tight md:text-5xl">Tools I Use</h2></div><span className="font-mono text-xs text-muted-foreground">12 tools</span></div><div className="grid grid-cols-2 border-l border-t sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">{tools.map(([name, slug]) => <div key={name} className="flex min-h-32 flex-col items-center justify-center gap-4 border-b border-r p-5 text-center"><img src={`https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/${slug}/mono.svg`} alt={`${name} logo`} className="h-9 w-24 object-contain brightness-0 dark:invert" loading="lazy" /><span className="font-mono text-[0.65rem] uppercase tracking-widest text-muted-foreground">{name}</span></div>)}</div></div></section>
+}
