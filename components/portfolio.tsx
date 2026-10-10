@@ -42,7 +42,8 @@ const experience = [
 ]
 
 const skillGroups = [
-  { title: 'Skills and Technical Expertise', items: ['AI Video Production', 'AI Video Editing', 'Codex', 'Claude Code', 'Cursor', 'Lovable', 'v0', 'Grok', 'Gemini', 'Technical Support', 'Hardware Troubleshooting', 'Software Troubleshooting', 'Remote Customer Support', 'Root-Cause Analysis', 'Incident Documentation', 'IT Operations'] },
+  { title: 'AI Video Creation · Web Development · Tech Support', items: ['AI Video Production', 'AI Video Editing', 'AI-Assisted Web Development', 'Technical Support', 'Hardware Troubleshooting', 'Software Troubleshooting', 'Remote Customer Support', 'Root-Cause Analysis', 'Incident Documentation', 'IT Operations'] },
+  { title: 'Productivity and Operations · Communication and Customer Support', items: ['Microsoft Office', 'Google Workspace', 'Odoo', 'Slack', 'Intercom', 'Zoom', 'Discord'] },
 ]
 
 const navItems = [['Experience', '/experience'], ['Creations', '/creations'], ['Side Quests', '/side-quests'], ['Capabilities', '/capabilities'], ['About', '/about'], ['Contact', '/contact']] as const
@@ -165,8 +166,7 @@ export function Portfolio() {
       <section id="skills" className="border-t bg-muted">
         <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
           <p className="mb-4 font-mono text-xs uppercase tracking-widest text-muted-foreground">Capabilities</p>
-          <h2 className="mb-12 text-3xl font-semibold tracking-tight md:text-5xl">AI Video Creation · Web Development · Tech Support</h2>
-          <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 md:gap-x-8 md:gap-y-14">
+          <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-2 md:gap-x-8 md:gap-y-14">
             {skillGroups.map((group) => (
               <div key={group.title} className="flex flex-col gap-6">
                 <h2 className="text-2xl font-semibold tracking-tight">{group.title}</h2>

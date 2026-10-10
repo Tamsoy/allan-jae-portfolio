@@ -96,6 +96,10 @@
   .mobile-nav-link { display: flex; min-height: 3.5rem; align-items: center; border-bottom: 1px solid var(--border); font-size: 1.25rem; font-weight: 600; }
   .mobile-menu-group { display: flex; align-items: center; justify-content: space-between; gap: 1rem; border-bottom: 1px solid var(--border); padding: 1.5rem 0; }
   .menu-label { font-family: var(--font-geist-mono), monospace; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-foreground); }
+  .tools-marquee { animation: tools-marquee 32s linear infinite; }
+  .tools-marquee-wrap:hover .tools-marquee { animation-play-state: paused; }
+  @keyframes tools-marquee { from { transform: translateX(0); } to { transform: translateX(calc(-50% - 0.5rem)); } }
+  @media (prefers-reduced-motion: reduce) { .tools-marquee { animation: none; } }
   .hero-title-mobile { display: inline-block; line-height: 1.65; }
   .hero-availability { max-width: 19rem; font-size: 0.9375rem; line-height: 1.55; }
   .hero-availability-mobile { max-width: 19rem; font-size: 0.9375rem; line-height: 1.55; }
