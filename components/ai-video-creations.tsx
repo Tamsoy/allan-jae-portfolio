@@ -7,7 +7,7 @@ export const aiVideos = [
   { title: '3D Style Documentary', category: '3D Style Documentary', id: '1iDy3WgoaPsMrkLXmLJ8YSXQ8bcca2OKZ', thumbnailId: '1iDy3WgoaPsMrkLXmLJ8YSXQ8bcca2OKZ' },
   { title: 'Realistic Vlog', category: 'Realistic Vlog', id: '1G16baZM47RyV_MNYAhqRnyPFUK1PVqRP', thumbnailId: '1G16baZM47RyV_MNYAhqRnyPFUK1PVqRP' },
   { title: 'Skeleton Explainer', category: 'Skeleton Explainer', id: '1mzj_YILdD1ijVYfE3lhN0imQg_75oY6A', thumbnailId: '1mzj_YILdD1ijVYfE3lhN0imQg_75oY6A' },
-  { title: 'Stickman Explainer Documentary', category: 'Stickman Explainer Documentary', id: '1dd0GAuEWxyn9HNBiM-7MybMHK6QCryt2', thumbnailId: '1dd0GAuEWxyn9HNBiM-7MybMHK6QCryt2' },
+  { title: 'Stickman Explainer', category: 'Stickman Explainer', id: '1dd0GAuEWxyn9HNBiM-7MybMHK6QCryt2', thumbnailId: '1dd0GAuEWxyn9HNBiM-7MybMHK6QCryt2' },
   { title: 'VOX Style Documentary', category: 'VOX Style Documentary', id: '1rZYGC-6W09mrPsO0ehG4niNlsPpwQ7Ks', thumbnailId: '1rZYGC-6W09mrPsO0ehG4niNlsPpwQ7Ks' },
 ] as const
 
@@ -29,8 +29,8 @@ export function AiVideoCreations() {
     <section id="creations" className="border-t">
       <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
         <div className="mb-12 flex flex-col gap-4 md:mb-16 md:flex-row md:items-end md:justify-between">
-          <div><p className="mb-4 font-mono text-xs uppercase tracking-widest text-muted-foreground">Selected work · 2026</p><h2 className="text-3xl font-semibold tracking-tight md:text-5xl">AI Video Creations</h2></div>
-          <p className="max-w-sm text-muted-foreground">Short-form documentaries, explainers, and visual stories built with AI-assisted production workflows.</p>
+          <div><p className="mb-4 font-mono text-xs uppercase tracking-widest text-muted-foreground">Selected work</p><h2 className="text-3xl font-semibold tracking-tight md:text-5xl">AI Video Creations</h2></div>
+          <p className="max-w-sm text-muted-foreground">Long & short form documentaries, explainers, and visual stories built with AI-assisted production workflows.</p>
         </div>
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-x-8 md:gap-y-14">
           {aiVideos.map((video, index) => <button key={video.id} type="button" onClick={() => setActiveVideo(video)} className="group text-left">
