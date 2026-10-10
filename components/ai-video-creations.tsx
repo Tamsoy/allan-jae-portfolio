@@ -14,7 +14,6 @@ export const aiVideos = [
 
 export function AiVideoCreations() {
   const [activeVideo, setActiveVideo] = useState<(typeof aiVideos)[number] | null>(null)
-  const [hoveredVideo, setHoveredVideo] = useState<string | null>(null)
 
   useEffect(() => {
     if (!activeVideo) return
@@ -32,10 +31,9 @@ export function AiVideoCreations() {
           <p className="max-w-sm text-muted-foreground">Long & short form documentaries, explainers, and visual stories built with AI-assisted production workflows.</p>
         </div>
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-x-8 md:gap-y-14">
-          {aiVideos.map((video, index) => <button key={video.id} type="button" onClick={() => setActiveVideo(video)} onMouseEnter={() => setHoveredVideo(video.id)} onMouseLeave={() => setHoveredVideo(null)} className="group text-left">
+          {aiVideos.map((video, index) => <button key={video.id} type="button" onClick={() => setActiveVideo(video)} className="group text-left">
             <div className={`relative ${video.aspect} overflow-hidden bg-muted`}>
-              <img className={`h-full w-full object-cover transition duration-500 group-hover:scale-[1.02] ${hoveredVideo === video.id ? 'md:hidden' : ''}`} src={video.thumbnail} alt={`${video.title} thumbnail`} loading="lazy" />
-              {hoveredVideo === video.id && <iframe className="hidden h-full w-full border-0 md:block" src={`https://drive.google.com/file/d/${video.id}/preview`} title={`${video.title} hover preview`} allow="autoplay" />}
+              <img className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]" src={video.thumbnail} alt={`${video.title} thumbnail`} loading="lazy" />
               <span className="absolute inset-0 flex items-center justify-center bg-black/0 transition group-hover:bg-black/30"><span className="flex size-12 items-center justify-center rounded-full bg-white text-black opacity-0 transition group-hover:opacity-100"><Play className="ml-0.5 size-5 fill-current" aria-hidden="true" /></span></span>
             </div>
             <div className="mt-5 flex items-start justify-between gap-4"><div><p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">{String(index + 1).padStart(2, '0')} / 05</p><h3 className="mt-2 text-xl font-semibold tracking-tight">{video.title}</h3></div><span className="mt-1 text-xs text-muted-foreground">Play</span></div>

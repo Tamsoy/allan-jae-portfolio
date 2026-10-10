@@ -5,8 +5,8 @@ const tools = [
   ['Adobe Photoshop', 'https://www.adobe.com/products/photoshop.html', '/assets/icons/Icons/photoshop.svg'],
   ['Adobe Illustrator', 'https://www.adobe.com/products/illustrator.html', '/assets/icons/Icons/illustrator.svg'],
   ['CapCut', 'https://www.capcut.com/', 'https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/capcut/default.svg'],
-  ['Google Flow', 'https://labs.google/flow', 'https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/google/default.svg'],
-  ['Google AI Studio', 'https://aistudio.google.com/', 'https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/google/default.svg'],
+  ['Google Flow', 'https://labs.google/flow', '/assets/icons/google-flow.png'],
+  ['Google AI Studio', 'https://aistudio.google.com/', '/assets/icons/google-ai-studio.png'],
   ['Kling AI', 'https://klingai.com/', '/assets/icons/Icons/kling.svg'],
   ['Higgsfield', 'https://higgsfield.ai/', '/assets/icons/Icons/higgsfield.png'],
   ['Claude', 'https://claude.ai/', 'https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/claude/default.svg'],
@@ -15,5 +15,5 @@ const tools = [
 
 export function ToolsShowcase() {
   const marquee = [...tools, ...tools]
-  return <section id="tools" className="border-t bg-muted"><div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28"><div className="mb-12"><p className="mb-4 font-mono text-xs uppercase tracking-widest text-muted-foreground">Production stack</p><h2 className="text-3xl font-semibold tracking-tight md:text-5xl">Tools I Use</h2></div><div className="tools-marquee-wrap overflow-hidden border-y py-6"><div className="tools-marquee flex w-max items-center gap-4">{marquee.map(([name, href, icon], index) => <a key={`${name}-${index}`} href={href} target="_blank" rel="noreferrer" aria-label={`Open ${name} website`} className="flex size-28 shrink-0 items-center justify-center border bg-background p-6 transition-colors hover:bg-primary hover:invert"><img src={icon} alt={`${name} icon`} className="size-14 object-contain" loading="lazy" /></a>)}</div></div></div></section>
+  return <section id="tools" className="border-t bg-muted"><div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28"><div className="mb-12"><p className="mb-4 font-mono text-xs uppercase tracking-widest text-muted-foreground">Production stack</p><h2 className="text-3xl font-semibold tracking-tight md:text-5xl">Tools I Use</h2></div><div className="tools-marquee-wrap overflow-hidden border-y py-6"><div className="tools-marquee flex w-max items-center gap-4">{marquee.map(([name, href, icon], index) => <a key={`${name}-${index}`} href={href} target="_blank" rel="noreferrer" aria-label={`Open ${name} website`} className="flex size-20 shrink-0 items-center justify-center border bg-background p-4 transition-colors hover:bg-primary hover:invert md:size-24 md:p-5"><img src={icon} alt={`${name} icon`} className="size-10 object-contain md:size-12" loading="lazy" /></a>)}</div></div></div></section>
 }
