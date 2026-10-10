@@ -11,6 +11,8 @@ const tools = [
   ['Higgsfield', 'https://higgsfield.ai/', '/assets/icons/Icons/higgsfield.png'],
   ['Claude', 'https://claude.ai/', 'https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/claude/default.svg'],
   ['ChatGPT', 'https://chatgpt.com/', 'https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/openai/default.svg'],
+  ['ElevenLabs', 'https://elevenlabs.io/', '/assets/icons/elevenlabs.svg'],
+  ['Pixabay', 'https://pixabay.com/', '/assets/icons/pixabay.svg'],
 ] as const
 
 export function ToolsShowcase() {
