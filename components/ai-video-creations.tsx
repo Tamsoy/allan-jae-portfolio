@@ -5,9 +5,9 @@ import { Play, X } from 'lucide-react'
 
 export const aiVideos = [
   { title: '3D Style Documentary', category: '3D Style Documentary', id: '1iDy3WgoaPsMrkLXmLJ8YSXQ8bcca2OKZ', thumbnail: '/assets/thumbnails/Thumbnail/3D Style Documentary.jpg', aspect: 'aspect-video' },
-  { title: 'Realistic Vlog', category: 'Realistic Vlog', id: '1G16baZM47RyV_MNYAhqRnyPFUK1PVqRP', thumbnail: '/assets/thumbnails/Thumbnail/Realistic Vlog.jpg', aspect: 'aspect-[9/16]' },
-  { title: 'Skeleton Explainer', category: 'Skeleton Explainer', id: '1mzj_YILdD1ijVYfE3lhN0imQg_75oY6A', thumbnail: '/assets/thumbnails/Thumbnail/Skeleton Explainer.jpg', aspect: 'aspect-[9/16]' },
-  { title: 'Stickman Explainer', category: 'Stickman Explainer', id: '1dd0GAuEWxyn9HNBiM-7MybMHK6QCryt2', thumbnail: '/assets/thumbnails/Thumbnail/Stickman Explainer.jpg', aspect: 'aspect-[9/16]' },
+  { title: 'Realistic Vlog', category: 'Realistic Vlog', id: '1G16baZM47RyV_MNYAhqRnyPFUK1PVqRP', thumbnail: '/assets/thumbnails/Thumbnail/Realistic Vlog.jpg', aspect: 'aspect-[9/16] md:max-w-[220px]' },
+  { title: 'Skeleton Explainer', category: 'Skeleton Explainer', id: '1mzj_YILdD1ijVYfE3lhN0imQg_75oY6A', thumbnail: '/assets/thumbnails/Thumbnail/Skeleton Explainer.jpg', aspect: 'aspect-[9/16] md:max-w-[220px]' },
+  { title: 'Stickman Explainer', category: 'Stickman Explainer', id: '1dd0GAuEWxyn9HNBiM-7MybMHK6QCryt2', thumbnail: '/assets/thumbnails/Thumbnail/Stickman Explainer.jpg', aspect: 'aspect-video' },
   { title: 'VOX Style Documentary', category: 'VOX Style Documentary', id: '1rZYGC-6W09mrPsO0ehG4niNlsPpwQ7Ks', thumbnail: '/assets/thumbnails/Thumbnail/VOX Style Documentary.jpg', aspect: 'aspect-video' },
 ] as const
 
